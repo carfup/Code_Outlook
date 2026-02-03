@@ -1,0 +1,103 @@
+/**
+ * Outlook Calendar Application Styles
+ */
+
+/* Reset and base styles */
+* {
+  box-sizing: border-box;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* Fluent UI Calendar overrides for sidebar */
+.ms-Calendar {
+  width: 100% !important;
+}
+
+.ms-Calendar-dayWrapper {
+  width: 28px !important;
+  height: 28px !important;
+}
+
+/* Context menu positioning fix */
+.fui-MenuPopover {
+  z-index: 1000;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a1a1a1;
+}
+
+/* Week view grid time slots hover */
+.week-view-time-slot:hover {
+  background-color: rgba(0, 120, 212, 0.05);
+}
+
+/* Month view day cell transitions */
+.month-day-cell {
+  transition: background-color 0.15s ease;
+}
+
+/* Appointment card animations */
+.appointment-card {
+  transition: box-shadow 0.2s ease, transform 0.1s ease;
+}
+
+.appointment-card:active {
+  transform: scale(0.98);
+}
+
+/* Multi-day event bars */
+.multi-day-bar {
+  transition: opacity 0.15s ease;
+}
+
+/* Dialog backdrop */
+.fui-DialogSurface {
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+/* Header toolbar alignment */
+.fui-Toolbar {
+  width: 100%;
+  justify-content: space-between;
+}
+
+/* DatePicker popup z-index */
+.ms-Callout {
+  z-index: 1001 !important;
+}
+
+/* Dropdown popup z-index */
+.fui-Listbox {
+  z-index: 1001 !important;
+}

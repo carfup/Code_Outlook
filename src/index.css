@@ -1,0 +1,41 @@
+/**
+ * Global styles for Outlook Calendar Application
+ */
+
+:root {
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  display: block;
+  background-color: #fafafa;
+}
+
+/* Fluent UI resets */
+button {
+  font-family: inherit;
+}
+
+/* Remove default focus styles - Fluent UI handles focus */
+*:focus {
+  outline: none;
+}
+
+/* Selection color */
+::selection {
+  background-color: rgba(0, 120, 212, 0.3);
+}
