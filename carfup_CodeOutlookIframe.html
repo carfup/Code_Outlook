@@ -12,12 +12,19 @@
 				if (!variable.environmentvariabledefinition_environmentvariablevalue || variable.environmentvariabledefinition_environmentvariablevalue.length < 1) 	alert("Make sure you filled the Environment Variable called 'carfup_CodeOutlookAppUrl' with the correct link");
 
 				var appUrl =  variable.environmentvariabledefinition_environmentvariablevalue[0].value;    
-				const iframe = document.getElementById("CodeOutlookAppUrl"); 
-				if (iframe) 
-				{ 
-					iframe.src = appUrl; 
+				
+				if(appUrl == null) 
+				{
+					alert("Make sure you filled the Environment Variable called 'carfup_CodeOutlookAppUrl' with the correct link");
 				}
-				// perform additional operations on retrieved records
+				else 
+				{
+					const iframe = document.getElementById("CodeOutlookAppUrl"); 
+					if (iframe) 
+					{ 
+						iframe.src = appUrl; 
+					}
+				}
 			},
 			function (error) {
 				console.log(error.message);
