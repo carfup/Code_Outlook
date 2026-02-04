@@ -6,6 +6,11 @@ A modern calendar application built with React and TypeScript that integrates wi
 ![TypeScript](https://img.shields.io/badge/TypeScript-5-blue)
 ![Fluent UI](https://img.shields.io/badge/Fluent%20UI-v9-purple)
 
+Menu : [Features](#features) - [Integration capabilities](#integration-capabilities) - [Import the solution](#import-the-ready-to-use-solution) - [Build from Scratch](#build-from-scratch)
+
+## Demo
+![https://carfupstorage.blob.core.windows.net/sharex/2026_02_03_15-33-08_msedge.gif](https://carfupstorage.blob.core.windows.net/sharex/2026_02_03_15-33-08_msedge.gif)
+
 ## Features
 
 ### 📅 Calendar Views
@@ -41,18 +46,38 @@ A modern calendar application built with React and TypeScript that integrates wi
 - Toast notifications for success/error feedback
 - Responsive layout
 
-## Getting Started
+## Integration capabilities 
+- Stand alone, this app is likely a pro code app using the Canvas App engine, so it can be used using the directly link to it (https://apps.powerapps.com/play/e/EnvID/app/AppId)
+- Within a Model Driven App :
+  As of today, a seamless integration like a custom page or a canvas app is not available, but you can use a simple HTML Webresource file embedding the application using a Iframe.
+
+## Installation
+
+### Option 1 : Quick Install (recommended)
+1. Download *CodeOutlook_x_x_x_x_managed.zip*  [releases page](https://github.com/carfup/Code_Outlook/releases/latest)
+2. Simply import it into your environment
+3. Make sure the link of the application is updated in the "carfup_CodeOutlookIframe.html" 
+![https://carfupstorage.blob.core.windows.net/sharex/2026_02_03_15-44-05_msedge.png](https://carfupstorage.blob.core.windows.net/sharex/2026_02_03_15-44-05_msedge.png)
+4. Add the html file as a webresource into your Model Driven App navigation
+![https://carfupstorage.blob.core.windows.net/sharex/2026_02_03_15-46-37_msedge.png](https://carfupstorage.blob.core.windows.net/sharex/2026_02_03_15-46-37_msedge.png)
+6. Tada
+
+### Using PAC CLI:
+```bash
+pac auth create --environment "https://yourorg.crm.dynamics.com"
+pac solution import --path CodeOutlook_x_x_x_x_managed.zip
+```
+
+### Option 2:  Build from Scratch
+
+Follow the official Microsoft documentation to create a Code App from scratch:
+👉 [Create an app from scratch](https://learn.microsoft.com/en-us/power-apps/developer/code-apps/how-to/create-an-app-from-scratch)
 
 ### Prerequisites
 - Node.js 18+
 - Power Platform CLI (`pac`)
 - Power Apps environment with Code Apps enabled
-
-### Build from Scratch
-
-Follow the official Microsoft documentation to create a Code App from scratch:
-👉 [Create an app from scratch](https://learn.microsoft.com/en-us/power-apps/developer/code-apps/how-to/create-an-app-from-scratch)
-
+- 
 ### Installation
 
 1. **Clone the repository**
@@ -135,3 +160,6 @@ src/
 ## License
 
 See [LICENSE](LICENSE) file for details.
+
+-----
+Made with ❤️ for the Power Platform Community
