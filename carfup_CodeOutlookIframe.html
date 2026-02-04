@@ -1,0 +1,34 @@
+<html>
+<script type="text/javascript">
+	debugger;
+	function LoadAppUrl()
+	{
+		var context = parent.Xrm;
+
+		let results = context.WebApi.retrieveMultipleRecords("environmentvariabledefinition", `?$filter=schemaname eq 'carfup_CodeOutlookAppUrl'&$select=environmentvariabledefinitionid&$expand=environmentvariabledefinition_environmentvariablevalue($select=value)`).then(
+			function success(results) {
+				if (!results || !results.entities || results.entities.length < 1) return null;
+				let variable = results.entities[0];
+				if (!variable.environmentvariabledefinition_environmentvariablevalue || variable.environmentvariabledefinition_environmentvariablevalue.length < 1) 	alert("Make sure you filled the Environment Variable called 'carfup_CodeOutlookAppUrl' with the correct link");
+
+				var appUrl =  variable.environmentvariabledefinition_environmentvariablevalue[0].value;    
+				const iframe = document.getElementById("CodeOutlookAppUrl"); 
+				if (iframe) 
+				{ 
+					iframe.src = appUrl; 
+				}
+				// perform additional operations on retrieved records
+			},
+			function (error) {
+				console.log(error.message);
+				// handle error conditions
+			}
+		);
+	}
+	
+	LoadAppUrl();
+</script>
+<body>
+	<iframe id="CodeOutlookAppUrl" src="" title="carfup_Code Apps Outlook" width="100%" height="99%"></iframe>		
+</body>
+</html>

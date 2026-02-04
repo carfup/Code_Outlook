@@ -65,8 +65,8 @@ Menu : [Features](#features) - [Integration capabilities](#integration-capabilit
 ### Option 1 : Quick Install (recommended)
 1. Download *CodeOutlook_x_x_x_x_managed.zip*  [releases page](https://github.com/carfup/Code_Outlook/releases/latest)
 2. Simply import it into your environment
-3. Make sure the link of the application is updated in the "carfup_CodeOutlookIframe.html" 
-![https://carfupstorage.blob.core.windows.net/sharex/2026_02_03_15-44-05_msedge.png](https://carfupstorage.blob.core.windows.net/sharex/2026_02_03_15-44-05_msedge.png)
+3. Retrieve the App url for the CodeOutlook App
+4. Set the related Environment variable called "CodeOutlookAppUrl" with the App Url
 4. Add the html file as a webresource into your Model Driven App navigation
 ![https://carfupstorage.blob.core.windows.net/sharex/2026_02_03_15-46-37_msedge.png](https://carfupstorage.blob.core.windows.net/sharex/2026_02_03_15-46-37_msedge.png)
 5. Using the solution will gives you access to the app using the link : [https://apps.powerapps.com/play/e/EndID/app/143b9a43-6ee9-4990-b274-0abbf09bb40e
