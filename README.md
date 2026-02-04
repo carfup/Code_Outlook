@@ -6,7 +6,7 @@ A modern calendar application built with React and TypeScript that integrates wi
 ![TypeScript](https://img.shields.io/badge/TypeScript-5-blue)
 ![Fluent UI](https://img.shields.io/badge/Fluent%20UI-v9-purple)
 
-Menu : [Features](#features) - [Integration capabilities](#integration-capabilities) - [Import the solution](#import-the-ready-to-use-solution) - [Build from Scratch](#build-from-scratch)
+Menu : [Features](#features) - [Integration capabilities](#integration-capabilities) - [Import the solution](#option-1--quick-install-recommended) - [Build from Scratch](#option-2--build-from-scratch)
 
 ## Demo
 ![https://carfupstorage.blob.core.windows.net/sharex/2026_02_03_15-33-08_msedge.gif](https://carfupstorage.blob.core.windows.net/sharex/2026_02_03_15-33-08_msedge.gif)
@@ -53,6 +53,15 @@ Menu : [Features](#features) - [Integration capabilities](#integration-capabilit
 
 ## Installation
 
+### 🧪 Mandatory Prerequite : 
+🧪 **Disable the *Enforce security policy* on your environment :**
+
+1. Go to your [PPAC](https://admin.powerplatform.microsoft.com/)
+2. Select your environment
+3. Go to Settings > Under Product > Privacy + Security
+4. At the bottom of the page find this block and disable the *Enforce security policy* option
+![https://carfupstorage.blob.core.windows.net/sharex/2026_02_04_11-22-20_msedge.png](https://carfupstorage.blob.core.windows.net/sharex/2026_02_04_11-22-20_msedge.png)
+
 ### Option 1 : Quick Install (recommended)
 1. Download *CodeOutlook_x_x_x_x_managed.zip*  [releases page](https://github.com/carfup/Code_Outlook/releases/latest)
 2. Simply import it into your environment
@@ -60,6 +69,9 @@ Menu : [Features](#features) - [Integration capabilities](#integration-capabilit
 ![https://carfupstorage.blob.core.windows.net/sharex/2026_02_03_15-44-05_msedge.png](https://carfupstorage.blob.core.windows.net/sharex/2026_02_03_15-44-05_msedge.png)
 4. Add the html file as a webresource into your Model Driven App navigation
 ![https://carfupstorage.blob.core.windows.net/sharex/2026_02_03_15-46-37_msedge.png](https://carfupstorage.blob.core.windows.net/sharex/2026_02_03_15-46-37_msedge.png)
+5. Using the solution will gives you access to the app using the link : [https://apps.powerapps.com/play/e/EndID/app/143b9a43-6ee9-4990-b274-0abbf09bb40e
+](https://apps.powerapps.com/play/e/EndId/app/143b9a43-6ee9-4990-b274-0abbf09bb40e
+)
 6. Tada
 
 ### Using PAC CLI:
