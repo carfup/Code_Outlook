@@ -1,0 +1,36 @@
+{
+  "appId": "50c0840e-8a08-4b8e-8278-178180743e28",
+  "appDisplayName": "CodeOutlook",
+  "description": "Complete integration of the Outlook calendar with Microsoft Dataverse to manage appointments seamlessly within your organization.",
+  "environmentId": "1cce16eb-b8fc-4f6d-855a-326cd8d71490",
+  "buildPath": "./dist",
+  "buildEntryPoint": "index.html",
+  "logoPath": "Default",
+  "localAppUrl": "http://localhost:3000/",
+  "region": "prod",
+  "connectionReferences": {
+    "b26ee857-a9a9-4ef8-b46e-70a3684cadf2": {
+      "id": "/providers/Microsoft.PowerApps/apis/shared_office365",
+      "displayName": "Office 365 Outlook",
+      "dataSources": [
+        "office365"
+      ],
+      "authenticationType": null,
+      "sharedConnectionId": null,
+      "dataSets": {}
+    }
+  },
+  "databaseReferences": {
+    "default.cds": {
+      "databaseDetails": null,
+      "dataSources": {
+        "appointments": {
+          "entitySetName": "appointments",
+          "logicalName": "appointment",
+          "isHidden": false
+        }
+      },
+      "actions": null
+    }
+  }
+}
